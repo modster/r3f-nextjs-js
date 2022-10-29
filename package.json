@@ -17,7 +17,9 @@
     "build": "next build",
     "export": "EXPORT=true next build && EXPORT=true next export",
     "analyze": "ANALYZE=true next build",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@react-three/drei": "^9.32.3",
@@ -32,8 +34,18 @@
     "zustand": "^4.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.6",
     "@next/bundle-analyzer": "^12.3.0",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/manager-webpack5": "^6.5.13",
+    "@storybook/react": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
     "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.23.0",
     "eslint-config-next": "^12.3.0",
     "eslint-config-prettier": "^8.5.0",
